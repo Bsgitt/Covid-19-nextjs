@@ -30,8 +30,12 @@ const IndexPage = () => {
             width: 820px;
             margin: 0 auto;
           }
+          .title {
+            text-align: center;
+          }
         `}
       </style>
+      <h2 className='title'>COVID-19 with Nextjs</h2>
       <DataTable
         title='COVID-19 Sammary'
         columns={columns}
