@@ -4,6 +4,7 @@ import DataTable from "react-data-table-component";
 import columns from "../components/DataTableColumns";
 import DataChart from "../components/DataChart";
 import TimeSeriesCharts from "../components/TimeSeriesCharts";
+import Loading from "../components/Loading";
 
 const apiUrl = "https://api.covid19api.com/summary";
 const fecther = (url) => fetch(url).then((r) => r.json());
@@ -13,7 +14,7 @@ const IndexPage = () => {
   const { data: timeseries } = useSWR(timeSeriesUrl, fecther);
 
   if (!data) {
-    return <h2>Not Found</h2>;
+    return <Loading />;
   }
   if (error) {
     return <p>Error</p>;
