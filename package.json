@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^9.4.4",
+    "next": "^11.1.0",
     "react": "^16.13.1",
     "react-data-table-component": "^6.9.3",
     "react-dom": "^16.13.1",
